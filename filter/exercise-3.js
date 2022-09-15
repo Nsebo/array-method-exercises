@@ -29,6 +29,10 @@ const students = [
   },
 ];
 
-const filteredStudents = null; // Replace null and add .filter code here
+const filteredStudents = students.filter(
+  (student) => student.mark >= 75 && student.isOnline === true
+); // Replace null and add .filter code here
 
-console.log(filteredStudents);
+console.log('filteredStudents is :', filteredStudents);
+
+// logs :  {studentName: 'Kari', mark: 80, isOnline: true}

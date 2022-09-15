@@ -15,6 +15,7 @@ you. Set this variable to the .map array method you created.
 
 const values = [10, 20, 30, 40, 50, 100, 200, 300, 400, 500, 1000];
 
-const valuesBelow100 = null; // Replace null and add .filter code here
+const valuesBelow100 = values.filter((value) => value <= 100);
+console.log('ValuesBelow100 are :', valuesBelow100);
 
-console.log(valuesBelow100);
+// logs:[10, 20, 30, 40, 50, 100]

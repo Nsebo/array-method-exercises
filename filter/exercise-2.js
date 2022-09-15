@@ -38,6 +38,12 @@ const users = [
   },
 ];
 
-const filteredUsers = null; // Replace null and add .filter code here
+const filteredUsers = users.filter(({ isAdmin, isVerified }) => {
+  return isAdmin === true && isVerified === true;
+}); //
 
-console.log(filteredUsers);
+console.log('FilteredUsers are :', filteredUsers);
+
+// logs:
+// 0: {firstName: 'Kari', lastName: 'Nordmann', isAdmin: true, isVerified: true}
+// 1: {firstName: 'Jan', lastName: 'Nordmann', isAdmin: true, isVerified: true}
